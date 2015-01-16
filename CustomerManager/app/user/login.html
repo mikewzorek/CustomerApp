@@ -1,0 +1,42 @@
+﻿
+<h2>Login</h2>
+<form role="form" name="loginForm" ng-submit="vm.login(loginForm.$valid)" novalidate>
+    <div class="form-group">
+        <div class="input-group">
+            <input type="email" name="emailInput" class="form-control" id="uLogin" placeholder="Email" data-ng-model="vm.loginData.userName" required autofocus>
+            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        </div>
+    </div> <!-- /.form-group -->
+
+    <div class="form-group">
+        <div class="input-group">
+            <input type="password" name="passwordInput" class="form-control" id="uPassword" placeholder="Password" data-ng-model="vm.loginData.password" required>
+            <span for="uPassword" class="input-group-addon"><i class="fa fa-lock"></i></span>
+        </div> <!-- /.input-group -->
+    </div> <!-- /.form-group -->
+
+    <div class="checkbox">
+        <label>
+            <input type="checkbox"> Remember me
+        </label>
+    </div> <!-- /.checkbox -->
+
+    <div>
+        <button class="btn btn-lg btn-primary" type="submit">Login</button>
+    </div>
+    
+    <div ng-messages="loginForm.emailInput.$error" ng-if="loginForm.$submitted">
+        <div ng-message="required">
+            You forgot to enter your email address...
+        </div>
+        <div ng-message="email">
+            You did not enter your email address correctly...
+        </div>
+    </div>
+    
+    <div ng-messages="loginForm.passwordInput.$error" ng-if="loginForm.$submitted">
+        <div ng-message="required">
+            You forgot to enter your password...
+        </div>
+    </div>
+</form>

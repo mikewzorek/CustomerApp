@@ -1,0 +1,79 @@
+﻿body {
+}
+
+.container {
+    margin-top: 80px;
+}
+
+form.navbar-form > .form-group > label {
+    color: white;
+}
+
+.card {
+    background-color:#fff;
+    border: 1px solid #d4d4d4;
+    height:100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.cardHeader {
+    background-color:#027FF4;
+    font-size:14pt;
+    color:white;
+    padding:5px;
+    width:100%;
+}
+
+.cardBody {
+    padding-left: 5px;
+}
+
+.cardBodyLeft {
+    margin-top: -5px;
+}
+
+.cardBodyRight {
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.cardBodyContent {
+    width: 100px;
+}
+
+.cardImage {
+    height:50px;width:50px;margin-top:10px;
+}
+
+.white {
+    color: white;
+}
+
+.ordersTable tr:first-child th, .customersTable tr:first-child th {
+    background-color: #027FF4;
+    color: #fff;
+    font-weight: bold;
+}
+.customerFilter {
+    padding-top: 5px;
+}
+
+/*input.ng-pristine {
+    
+}
+
+input.ng-dirty {
+    
+}
+
+input.ng-valid {
+    
+}
+
+input.ng-invalid {
+    
+}*/
+
+
+
